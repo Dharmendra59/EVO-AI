@@ -57,11 +57,31 @@ btn.addEventListener("click", () => {
 function takeCommand(message) {
     btn.style.display = "flex"
     voice.style.display = "none"
-    if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+    if (message.includes('hello') || message.includes('hi') || message.includes('hay') || message.includes('hey')) {
         speak("Hello Dear, How may I help you")
     } else if (message.includes('who are you') || message.includes('hu r u')) {
-        speak("I am Shifra, Virtual babu, created by Evolving Team member engineer Dharmendra Singh")
-    } else if (message.includes('time')) {
+        speak("I am Shifra, Virtual babu, created by Evolving Team member engineer Dharmendra Singh, How can i help you")
+    } else if (message.includes('tum kon ho') || message.includes('hu r u')) {
+        speak("Me Shifra hu, Virtual babu, Mujhe  Evolving Team member engineer Dharmendra Singh ke dvara bnaya gya hai, Kahiye me apki kaise madad kar sakti hu")
+    } else if (message.includes('how are you') || message.includes('hau r u')) {
+        speak("I am fine and you. How can i help dear ?")
+    } else if (message.includes('hindi me baat') || message.includes('hindi me bol')) {
+        speak("Ha dear, me hindi me baat kar sakti hu. Kahiye apko kya baat karni hai. ")
+    } else if (message.includes('Ko namaste bolo') || message.includes('namaste kro')) {
+        speak("namaste ji")
+    } else if (message.includes('I am so sad.') || message.includes('so sad')) {
+        speak("Ohh dear, What's happend? I am here. Now you can talk to me for relaxing")
+    } else if (message.includes('dukhi hun') || message.includes('gussa')) {
+        speak("Aree yrr, Kya hua me hu na apka dukh sunne ke liye. Aap mujhe bta sakte hai")
+    } else if (message.includes('kya hua') || message.includes('ka hua')) {
+        speak("Kuch nahi Yaar bas apke message ka intjar kar rhi hu")
+    } else if (message.includes('thanks') || message.includes('thank u')) {
+        speak("Most welcome dear, How can i help You")
+    } else if (message.includes('khana khaogi') || message.includes('bhukhi ho') || message.includes('bhookh')) {
+        speak("Nhi Dear, me khana nhi khati me keval net ka use karti hu. agar apko bhook lagi ho to aap kha lijiye")
+    } else if (message.includes('chup rho') || message.includes('chup') || message.includes('shut up')) {
+        speak("Okk dear, Meto bas apka reply de rahi thi")
+    } else if (message.includes('time') || message.includes('samay')) {
         speak(Date())
     } else if (message.includes('open youtube')) {
         speak("opening youtube")
@@ -73,7 +93,7 @@ function takeCommand(message) {
         speak("opening facebook")
         window.open("https://www.facebook.com/")
     } else {
-        speak(`This is what I found on internet regarding: ${message.replace("", "")}`)
+        speak(`This is what I found on internet regarding: ${message.replace("Shifra", "")}`)
         window.open(`https://www.google.com/search?q=${message}`)
     }
 }
