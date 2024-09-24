@@ -91,6 +91,8 @@ function takeCommand(message) {
         speak("jai jay shree Ram.")
     } else if (message.includes('shree radhey') || message.includes('radhe radhe')) {
         speak("jai jay shree Radhey.")
+    } else if (message.includes('billu') || message.includes('billu kaha')) {
+        speak("billu abhi busy hai. usse disturb na karo. ")
     } else if (message.includes('time') || message.includes('samay')) {
         speak(Date())
     } else if (message.includes('open youtube')) {
