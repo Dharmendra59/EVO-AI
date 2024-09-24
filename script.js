@@ -67,8 +67,8 @@ function takeCommand(message) {
         speak("I am fine and you. How can i help dear ?")
     } else if (message.includes('hindi me baat') || message.includes('hindi me bol')) {
         speak("Ha dear, me hindi me baat kar sakti hu. Kahiye apko kya baat karni hai. ")
-    } else if (message.includes('Ko namaste bolo') || message.includes('namaste kro')) {
-        speak("namaste ji")
+    } else if (message.includes('namaste') || message.includes('namaste kro')) {
+        speak("namaste ji. namaste ji")
     } else if (message.includes('I am so sad.') || message.includes('so sad')) {
         speak("Ohh dear, What's happend? I am here. Now you can talk to me for relaxing")
     } else if (message.includes('dukhi hun') || message.includes('gussa')) {
@@ -81,6 +81,16 @@ function takeCommand(message) {
         speak("Nhi Dear, me khana nhi khati me keval net ka use karti hu. agar apko bhook lagi ho to aap kha lijiye")
     } else if (message.includes('chup rho') || message.includes('chup') || message.includes('shut up')) {
         speak("Okk dear, Meto bas apka reply de rahi thi")
+    } else if (message.includes('khana banana') || message.includes('khana bana')) {
+        speak("Ohh nahi dear, me khana kaise bana sakt hu, me apko keval bta sakti hu ki khana kaise banta hai")
+    } else if (message.includes('ghumane') || message.includes('ghumne')) {
+        speak("ohh, Nice thing, Dear vaise aap kaha jana pasand karoge.")
+    } else if (message.includes('aur') || message.includes('bataen')) {
+        speak("Aur Sab Badhiyan hi hai. Aap mujhe bataen me kya kar sakti hu apke liye.")
+    } else if (message.includes('shree Ram') || message.includes('ram')) {
+        speak("jai jay shree Ram.")
+    } else if (message.includes('shree radhey') || message.includes('radhe radhe')) {
+        speak("jai jay shree Radhey.")
     } else if (message.includes('time') || message.includes('samay')) {
         speak(Date())
     } else if (message.includes('open youtube')) {
@@ -89,6 +99,9 @@ function takeCommand(message) {
     } else if (message.includes('open google')) {
         speak("opening google")
         window.open("https://www.google.com/")
+    } else if (message.includes('open whatsapp')) {
+        speak("opening whatsapp")
+        window.open("https://web.whatsapp.com/")
     } else if (message.includes('open facebook')) {
         speak("opening facebook")
         window.open("https://www.facebook.com/")
