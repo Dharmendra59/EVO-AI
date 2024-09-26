@@ -99,13 +99,13 @@ function takeCommand(message) {
     } else if (message.includes('open google')) {
         speak("opening google")
         window.open("https://www.google.com/")
-    } else if (message.includes('whatsapp. bittu')) {
+    } else if (message.includes('whatsapp. bittu') || message.includes('whatsapp bittu')) {
         speak("Sending Message to Bitto")
         window.open("https://api.whatsapp.com/send/?phone=+919910389798&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
-    } else if (message.includes('whatsapp. shivang') || message.includes('whatsapp, shivang.') || message.includes('whatsapp Shivang.')) {
+    } else if (message.includes('whatsapp. shivang') || message.includes('whatsapp, shivang.') || message.includes('whatsapp Shivang')) {
         speak("Sending Message to Shivang")
         window.open("https://api.whatsapp.com/send/?phone=+917905358167&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
-    } else if (message.includes('whatsapp. papa') || message.includes('whatsapp, papa.') || message.includes('whatsup papa')) {
+    } else if (message.includes('whatsapp. papa') || message.includes('whatsapp, papa.') || message.includes('whatsapp papa')) {
         speak("Sending Message to Papaji")
         window.open("https://api.whatsapp.com/send/?phone=+918765049289&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
     } else if (message.includes('open whatsapp')) {
