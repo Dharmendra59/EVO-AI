@@ -2,12 +2,13 @@ let btn = document.querySelector("#btn")
 let content = document.querySelector("#cont")
 let voice = document.querySelector("#voice")
 
+
 function speak(text) {
     let text_speak = new SpeechSynthesisUtterance(text)
     text_speak.rate = 1
     text_speak.pitch = 1
     text_speak.volume = 1
-    text_speak.lang = "hi-GB"
+    text_speak.lang = "en-IN"
     window.speechSynthesis.speak(text_speak)
 
 }
@@ -29,9 +30,6 @@ function wishMe() {
 // window.addEventListener('load', () => {
 //     wishMe()
 // })
-
-
-
 
 
 let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
@@ -101,9 +99,18 @@ function takeCommand(message) {
     } else if (message.includes('open google')) {
         speak("opening google")
         window.open("https://www.google.com/")
+    } else if (message.includes('whatsapp. bittu')) {
+        speak("Sending Message to Bitto")
+        window.open("https://api.whatsapp.com/send/?phone=+919910389798&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
+    } else if (message.includes('whatsapp. shivang') || message.includes('whatsapp, shivang.') || message.includes('whatsapp Shivang.')) {
+        speak("Sending Message to Shivang")
+        window.open("https://api.whatsapp.com/send/?phone=+917905358167&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
+    } else if (message.includes('whatsapp. papa') || message.includes('whatsapp, papa.') || message.includes('whatsup papa')) {
+        speak("Sending Message to Papaji")
+        window.open("https://api.whatsapp.com/send/?phone=+918765049289&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
     } else if (message.includes('open whatsapp')) {
         speak("opening whatsapp")
-        window.open("https://web.whatsapp.com/")
+        window.open("https://api.whatsapp.com/send/?phone=+917380757082&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
     } else if (message.includes('open facebook')) {
         speak("opening facebook")
         window.open("https://www.facebook.com/")
