@@ -102,12 +102,12 @@ function takeCommand(message) {
     } else if (message.includes('whatsapp. bittu') || message.includes('whatsapp bittu')) {
         speak("Sending Message to Bitto")
         window.open("https://api.whatsapp.com/send/?phone=+919910389798&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
-    } else if (message.includes('whatsapp. shivang') || message.includes('whatsapp, shivang.') || message.includes('whatsapp Shivang')) {
-        speak("Sending Message to Shivang")
-        window.open("https://api.whatsapp.com/send/?phone=+917905358167&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
     } else if (message.includes('whatsapp. papa') || message.includes('whatsapp, papa.') || message.includes('whatsapp papa')) {
         speak("Sending Message to Papaji")
         window.open("https://api.whatsapp.com/send/?phone=+918765049289&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
+    } else if (message.includes('whatsapp, kartik') || message.includes('whatsapp, kartik.') || message.includes('whatsapp kartik')) {
+        speak("Sending Message to kartikey")
+        window.open("https://api.whatsapp.com/send/?phone=+919151542141&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
     } else if (message.includes('open whatsapp')) {
         speak("opening whatsapp")
         window.open("https://api.whatsapp.com/send/?phone=+917380757082&text=This+Massage+from+EVO-AI.Contact+Us&type=phone_number&app_absent=0")
