@@ -66,7 +66,7 @@ function takeCommand(message) {
     } else if (message.includes('hindi me baat') || message.includes('hindi me bol')) {
         speak("Ha dear, me hindi me baat kar sakti hu. Kahiye apko kya baat karni hai. ")
     } else if (message.includes('namaste') || message.includes('namaste kro')) {
-        speak("namaste ji. namaste ji")
+        speak("namaste dear, How can i help you.")
     } else if (message.includes('I am so sad.') || message.includes('so sad')) {
         speak("Ohh dear, What's happend? I am here. Now you can talk to me for relaxing")
     } else if (message.includes('dukhi hun') || message.includes('gussa')) {
